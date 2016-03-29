@@ -62,7 +62,7 @@
     %   Maximum Aileron Deflection is  35 deg
     dAmax   =   35 * 0.01745329 
     
-    save('/home/ldp/app/R2013b_UNIX/ldp workspace/powered parachute/InerGeo.mat','m','xcm','Ixx','Iyy','Izz','Ixz','cBar','b','S', ...
+    save('/home/ldp/app/R2013b_UNIX/ldp workspace/PoweredParachute/InerGeo.mat','m','xcm','Ixx','Iyy','Izz','Ixz','cBar','b','S', ...
        'xcp','Lz','lWing','CWing','CBody','CRoll','CPitch','emax', 'Slong','Slat','Sb')
     
     
@@ -140,7 +140,7 @@
    figure
    plot(AlphaTable, CnBetaTable), grid, title('CnBetaTable')
     
-    save('/home/ldp/app/R2013b_UNIX/ldp workspace/powered parachute/DataTable.mat','AlphaTable','CLTable','CDTable','CmTable', ...
+    save('/home/ldp/app/R2013b_UNIX/ldp workspace/PoweredParachute/DataTable.mat','AlphaTable','CLTable','CDTable','CmTable', ...
         'CYBetaTable','ClBetaTable','CldATable','CndATable' ,'CnBetaTable')
     
     

@@ -5,8 +5,8 @@
       global  u x xIdeal V CONHIS tuHis deluHis uInc TrimHist RUNNING tf  PidCtrl tol
       global m Ixx Iyy Izz Ixz S b cBar  lWing xcm  xcp CWing CBody CRoll CPitch Slat Slong emax Lz Sb
       global AlphaTable CDTable CLTable CYBetaTable ClBetaTable CldATable CmTable CndATable CnBetaTable
-      load ('/home/ldp/app/R2013b_UNIX/ldp workspace/powered parachute/InerGeo.mat')
-      load ('/home/ldp/app/R2013b_UNIX/ldp workspace/powered parachute/DataTable.mat')
+      load ('/home/ldp/app/R2013b_UNIX/ldp workspace/PoweredParachute/InerGeo.mat')
+      load ('/home/ldp/app/R2013b_UNIX/ldp workspace/PoweredParachute/DataTable.mat')
       %CONHIS  是否记录(Control history)
       %tuHis   tu的历史记录
       %deluHis delta u(t)的历史记录
