@@ -1,6 +1,6 @@
-      %   PowerParachute 飞行仿真模型
+      %   PowerParachute 动力伞飞行仿真模型
 
-      tic      %设置程序运行起始时间
+      tic     %设置程序运行起始时间
       clear
       global  u x xIdeal V CONHIS tuHis deluHis uInc TrimHist RUNNING tf  PidCtrl tol
       global m Ixx Iyy Izz Ixz S b cBar  lWing xcm  xcp CWing CBody CRoll CPitch Slat Slong emax Lz Sb
