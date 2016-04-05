@@ -8,18 +8,15 @@ function [CD,CL,CY,Cl,Cm,Cn,Thrust]	=	AeroModel(x,u,Mach,alphar,betar,V)
 
    % disp('***************** ENTER IN AEROMODEL *******************')
    global V cBar S CBody CRoll CPitch
-    %global m Ixx Iyy Izz Ixz S b cBar SMI CONHIS u tuHis deluHis uInc  RUNNING 
-    global AlphaTable CDTable CLTable CYBetaTable ClBetaTable CldATable CmTable CndATable CnBetaTable
-    %load ('/home/ldp/app/R2013b_UNIX/ldp workspace/powered parachute/InerGeo.mat')
-    %load ('/home/ldp/app/R2013b_UNIX/ldp workspace/powered parachute/DataTable.mat')
+   global AlphaTable CDTable CLTable CYBetaTable ClBetaTable CldATable CmTable CndATable CnBetaTable
 
     
     alphadeg	=	57.2957795 * alphar;
     if alphadeg <=-8
         alphadeg= -8;
     end
-    if alphadeg >=20
-        alphadeg = 20;
+    if alphadeg >=30
+        alphadeg = 30;
     end
         
     

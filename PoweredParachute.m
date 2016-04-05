@@ -3,8 +3,8 @@
       tic     %设置程序运行起始时间
       clear
       global  u x xIdeal V CONHIS tuHis deluHis uInc TrimHist RUNNING tf  PidCtrl tol
-      global m Ixx Iyy Izz Ixz S b cBar  lWing xcm  xcp CWing CBody CRoll CPitch Slat Slong emax Lz Sb
-      global AlphaTable CDTable CLTable CYBetaTable ClBetaTable CldATable CmTable CndATable CnBetaTable
+      global m Ixx Iyy Izz Ixz S b cBar r Mtheta lWing xcm  xcp CWing CBody CRoll CPitch Slat Slong emax Lz Sb
+      global AlphaTable CDTable0 CDTable45 CDTable90 CLTable0 CLTable45 CLTable90 CYBetaTable ClBetaTable CldATable CmTable CndATable CnBetaTable
       load ('/home/ldp/app/R2013b_UNIX/ldp workspace/PoweredParachute/InerGeo.mat')
       load ('/home/ldp/app/R2013b_UNIX/ldp workspace/PoweredParachute/DataTable.mat')
       %CONHIS  是否记录(Control history)
@@ -195,8 +195,8 @@
 		[dFdX,fac]	=	numjac('LinModel',ti,xj,xdotj,thresh,[],0);
 		Fmodel		=	dFdX(1:12,1:12)
 		Gmodel		=	dFdX(1:12,13:15)
-		save ('/home/ldp/app/R2013b_UNIX/ldp workspace/powered parachute/Fmodel','Fmodel','TASms','hm')
-		save ('/home/ldp/app/R2013b_UNIX/ldp workspace/powered parachute/Gmodel','Gmodel')
+		save ('/home/ldp/app/R2013b_UNIX/ldp workspace/PoweredParachute/Fmodel','Fmodel','TASms','hm')
+		save ('/home/ldp/app/R2013b_UNIX/ldp workspace/PoweredParachute/Gmodel','Gmodel')
          end
 
        
